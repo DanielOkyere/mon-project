@@ -4,7 +4,6 @@ import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Dropdown from "react-bootstrap/Dropdown";
-import {useState} from "react";
 
 function Search(props) {
 
