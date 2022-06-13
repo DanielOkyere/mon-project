@@ -1,9 +1,19 @@
-@import "~bootstrap/scss/bootstrap";
-
+* {
+	font-family: 'Poppins', sans-serif;
+}
+a {
+    text-decoration: none !important;
+    color: black !important;
+}
 $theme-colors: (
-	primary: #BE185D,
-	secondary:#EF4444,
-	grey-1:#E5E7EB,
-	grey-2: #F3F4F6,
-	dark: #1F2937
-);
+    primary: #be185d,
+    secondary: #ef4444,
+    grey-1: #e5e7eb,
+    grey-2: #f3f4f6,
+    dark: #1f2937,
+) !default;
+
+
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;1,300&display=swap');
+

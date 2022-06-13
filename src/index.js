@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.scss";
-import App from "./App";
 import Home from "./layouts/main-page";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -11,7 +10,7 @@ root.render(
     <React.StrictMode>
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<App />}/>
+                <Route path="/" element={<Home />}/>
 		<Route path="/home" element={<Home />}/>
             </Routes>
         </BrowserRouter>

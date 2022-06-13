@@ -18,7 +18,7 @@ function NavBar() {
                     </Navbar.Collapse>
                     <div className="row">
                         <div className="col-md-6">
-                            <Button className="bg-light text-dark bg-primary">
+                            <Button className="bg-light text-dark">
                                 Login
                             </Button>
                         </div>

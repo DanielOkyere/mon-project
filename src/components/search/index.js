@@ -4,8 +4,10 @@ import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Dropdown from "react-bootstrap/Dropdown";
+import {useState} from "react";
 
 function Search(props) {
+
     return (
         <>
             <Container>
@@ -23,12 +25,6 @@ function Search(props) {
                                 <Dropdown.Item href="#/action-1">
                                     Action
                                 </Dropdown.Item>
-                                <Dropdown.Item href="#/action-2">
-                                    Another action
-                                </Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">
-                                    Something else
-                                </Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                         <FormControl
@@ -37,7 +33,7 @@ function Search(props) {
                             className="me-2 col"
                             aria-label="Search"
                         />
-                        <Button variant="primary" className="rounded">
+                        <Button variant="primary" className="rounded" >
                             Search
                         </Button>
                     </Form>
