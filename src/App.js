@@ -1,13 +1,12 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import NavBar from './components/navbar';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.scss";
+
+import { Link } from "react-router-dom";
+
 
 function App() {
-  return (
-    <div className="App">
-	    <NavBar/>
-    </div>
-  );
+    return (
+	<Link to="/home">Home</Link>)
 }
 
 export default App;
