@@ -5,6 +5,35 @@ a {
     text-decoration: none !important;
     color: black !important;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.product-info, .product-images{
+    margin-top: 2rem;
+}
+.vl{
+    border-left: 8px solid #be185d;
+    height: 100%;
+    // left: 50%;
+    margin-left: -3px;
+    top: 0;
+}
+.ppage{
+    min-height: 70vh;
+}
+.main-prod-image{
+  width:100%;
+}
+.main-image{
+    max-height: 5rem;
+    max-width: 5rem;
+}
+.prod-name, .prod-rate{
+    font-weight: bolder !important;
+}
+
 $theme-colors: (
     primary: #be185d,
     secondary: #ef4444,
