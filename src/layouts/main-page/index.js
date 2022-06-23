@@ -3,6 +3,7 @@ import Category from "../../components/category";
 import Footer from "../../components/footer";
 import Search from "../../components/search";
 import ProductListing from "../../components/products/listing";
+import product from "../../services/products"
 function Home() {
     return (
         <>
@@ -10,7 +11,7 @@ function Home() {
                 <NavBar />
                 <Category />
                 <Search />
-		<ProductListing />
+		        <ProductListing products={product} />
                 <Footer />
             </div>
         </>
