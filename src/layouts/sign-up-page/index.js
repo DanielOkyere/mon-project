@@ -1,5 +1,6 @@
 import { Container, Form, Button } from "react-bootstrap";
 import NavBar from "../../components/navbar";
+import Footer from "../../components/footer";
 import { Link } from "react-router-dom";
 
 function SignUp() {
@@ -68,7 +69,7 @@ function SignUp() {
                         </div>
                         <div>
                             <Form.Group>
-                                
+
                             </Form.Group>
                         </div>
                         <Form.Group>
@@ -102,6 +103,7 @@ function SignUp() {
                     </Form>
                 </div>
             </Container>
+            <Footer/>
         </>
     );
 }

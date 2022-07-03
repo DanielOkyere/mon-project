@@ -1,7 +1,19 @@
 import { Container, Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function Signin() {
+    const [formData, setformData] = useState({
+        email: "",
+        password: "",
+    });
+    const sendUserInfo = (event) => {
+        event.preventDefault();
+        const userData = {
+            ...formData
+        }
+        console.log(userData);
+    };
     return (
         <>
             <Container>
@@ -10,33 +22,49 @@ function Signin() {
                         Logo
                     </h1>
                     <div className="login-page-item">
-                        <Form>
+                        <Form onSubmit={sendUserInfo}>
                             <Form.Group
                                 className="mb-3"
-                                controlId="formBasicEmail"
+                                controlId="email"
                             >
                                 <Form.Label>Email address</Form.Label>
                                 <Form.Control
                                     type="email"
                                     placeholder="Enter email"
+                                    value={formData.email}
+                                    onChange={(e) => {
+                                        setformData({
+                                            ...formData,
+                                            email: e.target.value,
+                                        });
+                                    }}
                                 />
                             </Form.Group>
 
                             <Form.Group
                                 className="mb-3"
-                                controlId="formBasicPassword"
+                                controlId="password"
                             >
                                 <Form.Label>Password</Form.Label>
                                 <Form.Control
                                     type="password"
                                     placeholder="Password"
+                                    value={formData.password}
+                                    onChange={(e) => {
+                                        setformData({
+                                            ...formData,
+                                            password: e.target.value,
+                                        });
+                                    }}
                                 />
                             </Form.Group>
                             <Form.Group>
                                 <Form.Text className="text-muted">
                                     Dont have an account yet?
                                 </Form.Text>
-                            <Link to="/signup" className="sign-up-text">Sign Up</Link>
+                                <Link to="/signup" className="sign-up-text">
+                                    Sign Up
+                                </Link>
                             </Form.Group>
                             <br />
                             <div className="d-grid gap-2">
@@ -48,11 +76,7 @@ function Signin() {
                                     Sign In
                                 </Button>
                                 <br />
-                                <Button
-                                    variant="outline-primary"
-                                    type="submit"
-                                    size="lg"
-                                >
+                                <Button variant="outline-primary" size="lg">
                                     <Link to="/home">Cancel</Link>
                                 </Button>
                             </div>
