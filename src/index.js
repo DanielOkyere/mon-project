@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.scss";
 import Home from "./layouts/main-page";
+import Signin from "./layouts/signin-page"
 import SingleProduct from "./components/products/singleProduct-page";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -14,6 +15,7 @@ root.render(
                 <Route path="/" element={<Home />}/>
 		        <Route path="/home" element={<Home />}/>
                 <Route exact path="/product/:productId" element={<SingleProduct/>}/>
+                <Route path="/signin" element={<Signin/>}/>
             </Routes>
         </BrowserRouter>
     </React.StrictMode>,

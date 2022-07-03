@@ -19,7 +19,7 @@ function NavBar() {
                     <div className="row">
                         <div className="col-md-6">
                             <Button className="bg-light text-dark">
-                                Login
+                               <Link to="/signin">Login</Link> 
                             </Button>
                         </div>
                         <div className="col-md-6">
