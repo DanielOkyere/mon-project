@@ -36,7 +36,7 @@ function Signin() {
                                 <Form.Text className="text-muted">
                                     Dont have an account yet?
                                 </Form.Text>
-                            <Link to="/signup">Sign Up</Link>
+                            <Link to="/signup" className="sign-up-text">Sign Up</Link>
                             </Form.Group>
                             <br />
                             <div className="d-grid gap-2">
