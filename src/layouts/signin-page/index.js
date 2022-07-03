@@ -6,7 +6,7 @@ function Signin() {
         <>
             <Container>
                 <div className="login-page">
-                    <h1 className="brand-logo text-center display-1 mt-5 mb-3">
+                    <h1 className="brand-logo text-center display-1 mt-5 mb-5">
                         Logo
                     </h1>
                     <div className="login-page-item">
