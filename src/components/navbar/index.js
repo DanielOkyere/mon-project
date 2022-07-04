@@ -13,13 +13,10 @@ function NavBar() {
                         <Link to="/home">Logo</Link>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
+                    <Navbar.Collapse id="basic-navbar-nav" className="navbar-details">
                         <Nav justify="True" fill="True">
-                            <Nav.Item>
-                                <Nav.Link>Home</Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link>
+                            <Nav.Item >
+                                <Nav.Link >
                                     <Button className="bg-light text-dark">
                                         <Link to="/signin">Login</Link>
                                     </Button>
