@@ -8,16 +8,24 @@ import SingleProduct from "./components/products/singleProduct-page";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import PropertyPage from "./layouts/property-pages";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
     <React.StrictMode>
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Home />}/>
-		        <Route path="/home" element={<Home />}/>
-                <Route exact path="/product/:productId" element={<SingleProduct/>}/>
-                <Route path="/signin" element={<Signin/>}/>
-                <Route path="/signup" element={<SignUp/>}/>
+                <Route path="/" element={<Home />} />
+                <Route path="/home" element={<Home />} />
+                <Route
+                    exact
+                    path="/product/:productId"
+                    element={<SingleProduct />}
+                />
+                <Route path="/signin" element={<Signin />} />
+                <Route path="/signup" element={<SignUp />} />
+                <Route exact path="/create-posting" element={<PropertyPage />}/>
             </Routes>
         </BrowserRouter>
     </React.StrictMode>,
