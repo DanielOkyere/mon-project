@@ -19,9 +19,9 @@ class Category extends Component {
                 <div>
                     <Container>
                         <div className="container">
-                            <div className="row align-items-center p-3 text-center">
+                            <div className="row align-items-center p-3 text-left">
                                 {this.categories.map((category, index) => (
-                                    <div className="col-md">
+                                    <div className="col">
                                         <Link
                                             to={`/category/${category}`}
                                             key={index}

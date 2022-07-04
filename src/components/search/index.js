@@ -3,7 +3,6 @@ import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import Dropdown from "react-bootstrap/Dropdown";
 
 function Search(props) {
 
@@ -12,20 +11,6 @@ function Search(props) {
             <Container>
                 <div className="row align-items-center m-3 p-3 text-center">
                     <Form className="d-flex">
-                        <Dropdown bg="light">
-                            <Dropdown.Toggle
-                                variant="primary"
-                                id="dropdown-basic"
-                            >
-                                City / Province
-                            </Dropdown.Toggle>
-
-                            <Dropdown.Menu>
-                                <Dropdown.Item href="#/action-1">
-                                    Action
-                                </Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
                         <FormControl
                             type="search"
                             placeholder="Search"

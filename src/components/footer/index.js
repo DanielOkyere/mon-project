@@ -4,7 +4,7 @@ function Footer() {
         <>
             <footer className="page-footer font-small blue pt-4 bg-light">
                 <Container>
-                    <div className="container-fluid text-center text-md-left">
+                    <div className="container-fluid text-left text-md-left">
                         <div className="row">
                             <div className="col-md-6 mt-md-0 mt-3">
                                 <h5 className="text-uppercase">Logo</h5>
