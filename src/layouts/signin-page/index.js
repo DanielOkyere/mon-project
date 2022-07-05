@@ -1,21 +1,36 @@
 import { Container, Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { authSignin } from "../../services/auth";
+import { useNavigate} from "react-router-dom";
+
 
 function Signin() {
+    const navigate = useNavigate();
+
     const [formData, setformData] = useState({
         email: "",
         password: "",
     });
-    const sendUserInfo = (event) => {
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const sendUserInfo = async (event) => {
+        
         event.preventDefault();
         const userData = {
-            ...formData
-        }
-        console.log(userData);
+            ...formData,
+        };
+       ;
+        const user = await authSignin(userData)
+        console.log(user)
+        if( user.access_token != null)
+        navigate('/')
     };
+
+
     return (
         <>
+
             <Container>
                 <div className="login-page">
                     <h1 className="brand-logo text-center display-1 mt-5 mb-5">
@@ -23,10 +38,7 @@ function Signin() {
                     </h1>
                     <div className="login-page-item">
                         <Form onSubmit={sendUserInfo}>
-                            <Form.Group
-                                className="mb-3"
-                                controlId="email"
-                            >
+                            <Form.Group className="mb-3" controlId="email">
                                 <Form.Label>Email address</Form.Label>
                                 <Form.Control
                                     type="email"
@@ -41,10 +53,7 @@ function Signin() {
                                 />
                             </Form.Group>
 
-                            <Form.Group
-                                className="mb-3"
-                                controlId="password"
-                            >
+                            <Form.Group className="mb-3" controlId="password">
                                 <Form.Label>Password</Form.Label>
                                 <Form.Control
                                     type="password"
