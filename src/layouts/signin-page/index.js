@@ -2,8 +2,7 @@ import { Container, Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { authSignin } from "../../services/auth";
-import { useNavigate} from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 
 function Signin() {
     const navigate = useNavigate();
@@ -15,24 +14,18 @@ function Signin() {
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
     const sendUserInfo = async (event) => {
-        
         event.preventDefault();
         const userData = {
             ...formData,
         };
-       ;
-        const user = await authSignin(userData)
-        console.log(user)
-        if( user.access_token != null)
-        navigate('/')
+        const user = await authSignin(userData);
+        if (user.access_token != null) navigate("/");
     };
-
 
     return (
         <>
-
             <Container>
-                <div className="login-page">
+                <div className="login-page mb-3">
                     <h1 className="brand-logo text-center display-1 mt-5 mb-5">
                         Logo
                     </h1>

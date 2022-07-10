@@ -8,7 +8,7 @@ function SignUp() {
         <>
             <NavBar />
             <Container>
-                <div className="sign-up-form-container">
+                <div className="sign-up-form-container mb-3">
                 <h1 className="brand-logo text-center display-1 mt-5 mb-5">
                         Logo
                     </h1>

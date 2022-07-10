@@ -57,7 +57,7 @@ body {
     margin-right: auto;
 }
 @media only screen and (min-width: 320px) {
-    .login-page-item, .signup-form-element {
+    .login-page-item, .signup-form-element, .choice-page {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 2;

@@ -1,10 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.scss";
-import Home from "./layouts/main-page";
-import Signin from "./layouts/signin-page";
-import SignUp from "./layouts/sign-up-page";
-import SingleProduct from "./components/products/singleProduct-page";
+import {
+    Home,
+    SignUp,
+    Signin,
+    ChoicePage
+} from "./layouts";
+import {
+    SingleProduct,
+} from "./components";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -16,7 +21,7 @@ root.render(
     <React.StrictMode>
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<ChoicePage />} />
                 <Route path="/home" element={<Home />} />
                 <Route
                     exact

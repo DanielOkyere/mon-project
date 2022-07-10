@@ -8,7 +8,7 @@ function PropertyPage() {
         <>
             <NavBar />
             <Container>
-                <div className="select-property">
+                <div className="select-property mb-3">
                     <div className="display-1">Type of property</div>
                     <div className="row">
                         <div className="col-sm-6">

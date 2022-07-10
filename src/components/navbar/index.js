@@ -17,7 +17,7 @@ function NavBar() {
                         <Nav justify="True" fill="True">
                             <Nav.Item >
                                 <Nav.Link >
-                                    <Button className="bg-light text-dark">
+                                    <Button className="bg-light text-white">
                                         <Link to="/signin">Login</Link>
                                     </Button>
                                 </Nav.Link>
