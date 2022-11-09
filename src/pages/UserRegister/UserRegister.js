@@ -4,9 +4,9 @@ import Navbar from "../../components/Navbar/Navbar";
 
 function UserRegister() {
 	return (
-		<>
+		<div className="Home p-4 flex flex-col w-full">
 			<Navbar />
-			<div className="UserRegister flex items-center justify-center w-full">
+			<div className="UserRegister flex items-center justify-center w-full mt-32">
 				<div className="SignInDiv flex-flex-wrap">
 					<h3 className="font-bold text-2xl text-app-text-dark text-center mb-4">
 						Sign Up
@@ -78,7 +78,7 @@ function UserRegister() {
 					</div>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 }
 

@@ -1,9 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Navbar from '../../components/Navbar/Navbar'
 
 function HostRegister1() {
   return (
-    <div className='HostRegister1 flex items-center justify-center w-full'>
+    <div className="Home p-4 flex flex-col w-full">
+      <Navbar />
+    <div className='HostRegister1 flex items-center justify-center w-full mt-32'>
       <div className='SignInDiv flex-flex-wrap'>
         <h3 className='font-bold text-2xl text-app-text-dark text-center mb-4'>Sign Up</h3>
         <div className='flex flex-wrap w-full mb-2'>
@@ -38,6 +41,7 @@ function HostRegister1() {
           </Link>
         </div>
       </div>
+    </div>
     </div>
   )
 }
