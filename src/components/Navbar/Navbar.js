@@ -9,7 +9,14 @@ function Navbar() {
             <div className='Nav-left flex flex-row items-end'>
                 <h1 className='font-bold text-2xl'>Logo</h1>
                 <Link to="/" className='ml-8'>
-                <h1 className='text-md'>Home</h1>
+                <h1 className='text-md font-semibold'>Home</h1>
+                
+                </Link>
+                <Link to="/" className='ml-8'>
+                <h1 className='text-md font-semibold'>Back</h1>
+                
+                
+            
                 </Link>
             </div>
 
@@ -19,10 +26,10 @@ function Navbar() {
                 <h1 className='text-md'>Become a Host</h1>
                 </Link>
                 <Link to="/login" className='ml-8'>
-                <h1 className='text-md'>Login</h1>
+                <h1 className='text-md font-semibold'>Login</h1>
                 </Link>
                 <Link to="/register/user" className='ml-8'>
-                <h1 className='text-md'>Sign Up</h1>
+                <h1 className='text-md font-semibold'>Sign Up</h1>
                 </Link>
             </div>
         </div>
