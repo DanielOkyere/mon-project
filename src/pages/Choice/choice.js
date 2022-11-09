@@ -1,12 +1,21 @@
-import React, { Component } from "react";
+import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 import Home from "../Home/Home";
+import HomeCard from "../../components/HomeCard/HomeCard";
 
 function Choice() {
 	return (
-		<div className="Home flex flex-col">
+		<div className="Home p-4 flex flex-col">
 			<Navbar />
+
+		
+
+		
+
+			{/* Home Card */}
+
+			<div className="flex flex-wrap items-center justify-center mt-12 mb-24">
 
 			<h1>Are you one of these?</h1>
 			<div className="OwnerCustomer">
@@ -35,6 +44,14 @@ function Choice() {
 				</Link>
 			</div>
 		</div>
+		</div>
+	
 	);
+
+	// return (
+	// 	<div className="Home p-4 flex flex-col">
+	// 		<Navbar />
+
+
 }
 export default Choice;

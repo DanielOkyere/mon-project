@@ -33,7 +33,9 @@ function HostRegister1() {
         </Link>
         <div className='prompt m-2 flex items-center justify-center p-2'>
           <h6 className='text-sm'>Already have an account?</h6>
+          <Link to='/login'>
           <button className="ml-2 text-app-pink text-sm font-bold">Sign In</button>
+          </Link>
         </div>
       </div>
     </div>

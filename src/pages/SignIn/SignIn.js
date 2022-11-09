@@ -5,8 +5,11 @@ import Navbar from "../../components/Navbar/Navbar";
 function SignIn() {
 	return (
 		<>
-			<Navbar />
-			<div className="SignIn flex items-center justify-center w-full">
+		
+		
+
+			<div className="SignIn flex flex-col items-center  w-full">
+			<div className="mb-auto"><Navbar /></div>
 				<div className="login-div flex flex-col items-center">
 					<h3 className="font-bold text-2xl mb-3">Log in</h3>
 					<input
@@ -40,7 +43,7 @@ function SignIn() {
 					</div>
 				</div>
 			</div>
-		</>
+			</>
 	);
 }
 
