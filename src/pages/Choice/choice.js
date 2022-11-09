@@ -6,31 +6,16 @@ import HomeCard from "../../components/HomeCard/HomeCard";
 
 function Choice() {
 	return (
-<<<<<<< HEAD
-		<div className="Home p-4 flex flex-col">
-			<Navbar />
-
-		
-
-		
-
-			{/* Home Card */}
-
-			<div className="flex flex-wrap items-center justify-center mt-12 mb-24">
-
-			<h1>Are you one of these?</h1>
-			<div className="OwnerCustomer">
-				<div>
-=======
 		<div className="Home px-64 flex flex-col ">
 			<Navbar />
 
-			<h1 class= "font-semibold text-3xl mt-3 text-center">Are you one of these?</h1>
+			<h1 class="font-semibold text-3xl mt-3 text-center">
+				Are you one of these?
+			</h1>
 			<div className="OwnerCustomer flex items-center space-x-4">
-				<div class='py-4'>
->>>>>>> d023464d7ccae0deb3e68e041e3f2ac64c4560d4
+				<div class="py-4">
 					<Link to="/home">
-						<h2 class= "font-bold text-2xl mt-6 pb-2">Customer</h2>
+						<h2 class="font-bold text-2xl mt-6 pb-2">Customer</h2>
 					</Link>
 					<Link to="/home">
 						<img
@@ -40,30 +25,24 @@ function Choice() {
 					</Link>
 				</div>
 
-				<div class='py-4'>
+				<div class="py-4">
 					<Link to="/register/host/credentials">
-						<h2 class= "font-bold text-2xl mt-7 pb-2">Owner</h2>
+						<h2 class="font-bold text-2xl mt-7 pb-2">Owner</h2>
 					</Link>
-				
-				<Link to="/register/host/credentials">
-					<img
-						src="https://picsum.photos/900/1000?random=7"
-						alt="Owner"
-						className="rounded img-fluid"></img>
-				</Link>
+
+					<Link to="/register/host/credentials">
+						<img
+							src="https://picsum.photos/900/1000?random=7"
+							alt="Owner"
+							className="rounded img-fluid"></img>
+					</Link>
+				</div>
 			</div>
 		</div>
-		</div>
-<<<<<<< HEAD
-	
-=======
->>>>>>> d023464d7ccae0deb3e68e041e3f2ac64c4560d4
 	);
 
 	// return (
 	// 	<div className="Home p-4 flex flex-col">
 	// 		<Navbar />
-
-
 }
 export default Choice;
