@@ -5,8 +5,13 @@ import Navbar from "../../components/Navbar/Navbar";
 function SignIn() {
 	return (
 		<>
-			<Navbar />
+		<div>
+			
+		<Navbar />
+		</div>
 			<div className="SignIn flex items-center justify-center w-full">
+				
+			
 				<div className="login-div flex flex-col items-center">
 					<h3 className="font-bold text-2xl mb-3">Log in</h3>
 					<input
