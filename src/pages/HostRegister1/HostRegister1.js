@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+<<<<<<< HEAD
 import Navbar from '../../components/Navbar/Navbar'
 
 function HostRegister1() {
@@ -7,6 +8,12 @@ function HostRegister1() {
     <div className="Home p-4 flex flex-col w-full">
       <Navbar />
     <div className='HostRegister1 flex items-center justify-center w-full mt-32'>
+=======
+
+function HostRegister1() {
+  return (
+    <div className='HostRegister1 flex items-center justify-center w-full'>
+>>>>>>> 460fd3f8d7cdb4326a9b4596209b0d7432a65e74
       <div className='SignInDiv flex-flex-wrap'>
         <h3 className='font-bold text-2xl text-app-text-dark text-center mb-4'>Sign Up</h3>
         <div className='flex flex-wrap w-full mb-2'>
@@ -36,6 +43,7 @@ function HostRegister1() {
         </Link>
         <div className='prompt m-2 flex items-center justify-center p-2'>
           <h6 className='text-sm'>Already have an account?</h6>
+<<<<<<< HEAD
           <Link to='/login'>
           <button className="ml-2 text-app-pink text-sm font-bold">Sign In</button>
           </Link>
@@ -43,6 +51,12 @@ function HostRegister1() {
       </div>
     </div>
     </div>
+=======
+          <button className="ml-2 text-app-pink text-sm font-bold">Sign In</button>
+        </div>
+      </div>
+    </div>
+>>>>>>> 460fd3f8d7cdb4326a9b4596209b0d7432a65e74
   )
 }
 
