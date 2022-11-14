@@ -25,7 +25,7 @@ function Choice() {
 
 				<div class="py-4">
 					<Link to="/register/host/credentials">
-						<h2 class="font-bold text-2xl mt-7 pb-2">Ownersssss</h2>
+						<h2 class="font-bold text-2xl mt-7 pb-2">Owner</h2>
 					</Link>
 
 					<Link to="/register/host/credentials">
