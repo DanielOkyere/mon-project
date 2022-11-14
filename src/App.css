@@ -1,0 +1,40 @@
+:root{
+  --app-white: #f3f4f6;
+  --app-pink: #be185d;
+  --app-orange: #ef4444;
+  --text-dark: #1f2937;
+  --text-gray: #939393;
+  --text-light-gray: #ABABAB;
+
+  --max-width: 1300px;
+  --min-height: 100vh;
+}
+
+body{
+  background-color: var(--app-white);
+}
+
+.App{
+  max-width: var(--max-width);
+  /* height: 100vh; */
+  min-height: var(--min-height);
+  flex: 1;
+  color: var(--text-dark);
+  /* background-color: aquamarine; */
+  display: flex;
+}
+
+.App-outer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--app-white);
+}
+
+/* Utilities */
+.app-text-pink{
+  color: var(--app-pink); 
+}
+
