@@ -4,11 +4,23 @@ import Navbar from "../../components/Navbar/Navbar";
 
 function SignIn() {
 	return (
+<<<<<<< HEAD
 		
 			<div className="SignIn flex flex-col w-full p-4">
 					<Navbar />
 				
 				<div className="login-div flex flex-col items-center mt-40">
+=======
+		<>
+		<div>
+			
+		<Navbar />
+		</div>
+			<div className="SignIn flex items-center justify-center w-full">
+				
+			
+				<div className="login-div flex flex-col items-center">
+>>>>>>> 460fd3f (Tailwind clyde (#5))
 					<h3 className="font-bold text-2xl mb-3">Log in</h3>
 					<input
 						type="text"
@@ -41,7 +53,11 @@ function SignIn() {
 					</div>
 				</div>
 			</div>
+<<<<<<< HEAD
 		
+=======
+		</>
+>>>>>>> 460fd3f (Tailwind clyde (#5))
 	);
 }
 
