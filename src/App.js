@@ -12,6 +12,7 @@ import HostRegister3 from "./pages/HostRegister3/HostRegister3";
 import HostRegister4 from "./pages/HostRegister4/HostRegister4";
 import Choice from "./pages/Choice/choice";
 
+
 import React from "react";
 
 import "./App.css";

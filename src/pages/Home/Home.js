@@ -1,13 +1,13 @@
 import React from "react";
 import HomeCard from "../../components/HomeCard/HomeCard";
 import Navbar from "../../components/Navbar/Navbar";
-
+import Footer from "../../components/Footer/Footer";
 
 import { Link } from "react-router-dom";
 
 function Home() {
 	return (
-		<div className="Home p-4 flex flex-col">
+		<div className="Home p-4 flex flex-col w-full">
 			<Navbar />
 
 			{/* Room Type nav bar */}
@@ -68,6 +68,7 @@ function Home() {
 				<HomeCard img="https://picsum.photos/700/500?random=15" />
 				<HomeCard img="https://picsum.photos/700/500?random=16" />
 			</div>
+			<Footer />
 		</div>
 	);
 }

@@ -40,6 +40,7 @@ function SearchCard(props) {
             
             <div className='flex justify-between items-center mt-2'>
               <p className='text-app-text-gray my-4 text-lg'>Accra, Greater Accra</p>
+            
               <button className='text-app-pink text-sm p-1 w-24 rounded border-2 font-semibold border-app-pink hover:text-white hover:bg-app-pink'>View</button>
             </div>
             </div>
