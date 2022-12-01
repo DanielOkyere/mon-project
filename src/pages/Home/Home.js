@@ -2,8 +2,9 @@ import React from "react";
 import HomeCard from "../../components/HomeCard/HomeCard";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import {Link, Routes, Route, useNavigate} from 'react-router-dom';
 
-import { Link } from "react-router-dom";
+
 
 function Home() {
 	return (
